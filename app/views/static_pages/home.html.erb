@@ -1,11 +1,13 @@
-<div id="sidebar-wrapper">
-		<ul class="sidebar-nav">
-			<li class="sidebar-brand">Welcome</li>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Work</a></li>
-			<li><a href="#">Interests</a></li>
-		</ul>
-	</div>
-	<div class="content">
+<% content_for :title do %>
+  <title>Home</title>
+<% end %>
+<div id="page-content-wrapper">
+
+	<h2>Hello!</h2>
+	<br/>
+	<p>My name is Omar Ramalho and I am a full stack web dev currently working at <%= link_to "IronOak.Insights", "http://www.ironoak.energy/", :target => '_blank'%>. </p>
+
+	<p>Here you find'll about my education, work and interests<p>
+
+	<p> Feel free to contact me ar omar.sr88 [at] gmail [dot] com
 </div>
