@@ -1,2 +1,35 @@
-<h1>StaticPages#interests</h1>
-<p>Find me in app/views/static_pages/interests.html.erb</p>
+<% content_for :title do %>
+  <title>Interests</title>
+<% end %>
+
+<br>
+<span>Apart from the obvious interest in technology(duh), over the time I grew interested the most diverse subjects. They include politics and governments, the environment and music.</span>
+<hr/>
+
+<ul class="tabs">
+    <li><a href="#Brazil">Brazil</a></li>
+    <li><a href="#Music">Music</a></li>
+ </ul>
+<div class="clr"></div>
+
+<article id="Brazil">
+	<div class="work-text">
+		<h3 class="title">Politics, my own government...</h3>
+		<span> I try to be an active, conscious citzen by following the news of our government and reading all sources of information that I can to keep me well informed, but sometimes the news don't give out all the information for us.</span><br><br>
+		<span>Because of this, as the final dissertarion for my Computer Science Degree I chose a topic that relates to this. Event though Brazil is huge world economy, it still lacks in basic infrastructure. To solve this, the government started a investment program called "Growth Acceleration Program" (PAC, in portugues), which had a broad range of  objectives: build health centers, roads, bring electricty, water and sweage to people without access to it.</span><br><br>
+		<span> Using the government open data, Java and Tableau I wrote an overview of this program and create some visual representation for that data. Below is an example of one of them. The whole thing can be found at <%= link_to "Dados PAC", 'http://omarsr.wix.com/dadospac' %> (currently in portuguese, translation in progress, please contact if you need some part translated sooner) </span><br>
+
+
+		<script type='text/javascript' src='http://public.tableau.com/javascripts/api/viz_v1.js'></script><div class='tableauPlaceholder' style='width: 700px; height: 500px;'><noscript><a href='http:&#47;&#47;omarsr.wix.com.usrfiles.com&#47;html&#47;59fd2e_c54bc6b306cfcdd9bddbf5b413f6645e.html'><img alt='***Tipo Brasil ' src='http:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YR&#47;YR9MG5BD4&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz' width='986' height='751' style='display:none;'><param name='host_url' value='http%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;YR9MG5BD4' /> <param name='toolbar' value='yes' /><param name='static_image' value='http:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;YR&#47;YR9MG5BD4&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='tabs' value='no' /><param name='showTabs' value='y' /><param name='increment_view_count' value='no' /></object></div>
+	</div>
+</article>
+
+<article id="Music">
+	<div class="work-text">
+		<h3 class="title">Music</h3>
+		<span> I am huge fan of music. Had guitar lessons for a while and even got to play in a band with a couple friends =D.</span><br><br>
+		<span>My guitar teacher, and now friend, <%= link_to "Felipe Grisi","http://www.felipegrisi.com/Home.html" %> MsC asked me to help him in his masters thesis by creating a simple calculator to calculate the <%= link_to "Sound Mass", 'hhttps://en.wikipedia.org/wiki/Sound_mass' %> and density of a composition. The core of this calculator is to find the <%=link_to "Number partitions", "https://en.wikipedia.org/wiki/Partition_%28number_theory%29" %> of a given number and from those calculate what is asked based on other music theory aspects that he simplified to me</span><br><br>
+		<p>Screenshot of the calculator finding the solution for a group of 10 musicians, to a targeted 0.75 complexity and 0.05 aproximation. Links to souruce on GitHub</p>
+		<%= link_to image_tag("GrisiCalc.jpg"), "https://github.com/omar-sr88/GrisiCalc" %>
+	</div>
+</article>
