@@ -1,7 +1,4 @@
-<% content_for :title do %>
-  <title>Interests</title>
-<% end %>
-
+<% provide(:title, "Interests") %>
 <br>
 <span>Apart from the obvious interest in technology(duh), over the time I grew interested the most diverse subjects. They include politics and governments, the environment and music.</span>
 <hr/>
@@ -29,7 +26,7 @@
 		<h3 class="title">Music</h3>
 		<span> I am huge fan of music. Had guitar lessons for a while and even got to play in a band with a couple friends =D.</span><br><br>
 		<span>My guitar teacher, and now friend, <%= link_to "Felipe Grisi","http://www.felipegrisi.com/Home.html" %> MsC asked me to help him in his masters thesis by creating a simple calculator to calculate the <%= link_to "Sound Mass", 'hhttps://en.wikipedia.org/wiki/Sound_mass' %> and density of a composition. The core of this calculator is to find the <%=link_to "Number partitions", "https://en.wikipedia.org/wiki/Partition_%28number_theory%29" %> of a given number and from those calculate what is asked based on other music theory aspects that he simplified to me</span><br><br>
-		<p>Screenshot of the calculator finding the solution for a group of 10 musicians, to a targeted 0.75 complexity and 0.05 aproximation. Links to souruce on GitHub</p>
+		<p>Screenshot of the calculator finding the solution for a group of 10 musicians, to a targeted 0.75 complexity and 0.05 aproximation. Links to source on GitHub</p>
 		<%= link_to image_tag("GrisiCalc.jpg"), "https://github.com/omar-sr88/GrisiCalc" %>
 	</div>
 </article>

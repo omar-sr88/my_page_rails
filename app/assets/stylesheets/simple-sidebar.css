@@ -129,6 +129,14 @@
     background: none;
 }
 
+.sidebar-nav li:last-child{
+    width: 70px;
+}
+.sidebar-nav :last-child a{
+    width: 50px;
+}
+
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 250px;
